@@ -1,0 +1,163 @@
+
+/*resets*/
+*{
+	margin:0;
+	padding:0;
+}
+/*list item reset*/
+.lireset{
+	list-style-type: none;
+	margin-left:10px;
+}
+
+
+/*layout*/
+body{
+	background-color:black;
+	font-size:62.5%;
+}
+#wrapper{
+	background-color:gray;
+	width:900px;
+	height:80vh;
+	margin:0 auto;
+	padding: 10px;
+	z-index: 1;
+}
+
+#gameArea{
+	width:80%;
+	height:80%;
+	margin:10% auto;
+	border-radius:80px;
+	background-image:url('../images/gamebg.png');
+	background-size:cover;
+}
+#petObject{
+	position:relative;
+	left:50%;
+	top:75%;
+	width:80px;
+	height:80px;
+	overflow:hidden;
+}
+#catAnimation{
+	margin-left:0px;
+	margin-top: 0px;
+	
+}
+
+header{
+	background-color:red;
+}
+/*footer and status bars ui*/
+footer{
+	font-size: 3em;
+	width:99%;
+	background-color: grey;
+	color:white;
+	position:absolute;
+	bottom:0;
+	left:0;
+	border-top:-2px;
+	border-style:solid;
+}
+
+
+.negativeBar{
+	width:80%;
+	margin:20px;
+	background: rgb(169,3,41); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgb(169,3,41) 0%, rgb(214,4,7) 22%, rgb(143,2,34) 67%, rgb(109,0,25) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgb(169,3,41) 0%,rgb(214,4,7) 22%,rgb(143,2,34) 67%,rgb(109,0,25) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgb(169,3,41) 0%,rgb(214,4,7) 22%,rgb(143,2,34) 67%,rgb(109,0,25) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+}
+.positiveBar{
+	width:80%;
+	margin:20px;
+	background: #f3e2c7;
+	background: -moz-linear-gradient(top,  #f3e2c7 0%, #c19e67 32%, #b68d4c 76%, #b68d4c 76%, #e9d4b3 100%);
+	background: -webkit-linear-gradient(top,  #f3e2c7 0%,#c19e67 32%,#b68d4c 76%,#b68d4c 76%,#e9d4b3 100%);
+	background: linear-gradient(to bottom,  #f3e2c7 0%,#c19e67 32%,#b68d4c 76%,#b68d4c 76%,#e9d4b3 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3',GradientType=0 );
+}
+
+
+	/*fatigue bar*/
+#fatigueBar{
+	width:100%;
+	padding:2px;
+	background: #f3e2c7;
+	background: -moz-linear-gradient(top,  #A52CAD 0%, #D254DA 32%, #6C1D71 76%, #6C1D71 76%, #A52CAD 100%);
+	background: -webkit-linear-gradient(top,  #A52CAD 0%,#D254DA 32%,#6C1D71 76%,#6C1D71 76%,#A52CAD 100%);
+	background: linear-gradient(to bottom,  #A52CAD 0%,#D254DA 32%,#6C1D71 76%,#6C1D71 76%,#D254DA 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3',GradientType=0 );
+}
+
+.statusBar{
+	width:100%;
+	padding:2px;
+	background: #f3e2c7;
+	background: -moz-linear-gradient(top,  #f3e2c7 0%, #c19e67 32%, #b68d4c 76%, #b68d4c 76%, #e9d4b3 100%);
+	background: -webkit-linear-gradient(top,  #f3e2c7 0%,#c19e67 32%,#b68d4c 76%,#b68d4c 76%,#e9d4b3 100%);
+	background: linear-gradient(to bottom,  #f3e2c7 0%,#c19e67 32%,#b68d4c 76%,#b68d4c 76%,#e9d4b3 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3',GradientType=0 );
+}
+.negative-statusBar{
+	width:100%;
+	padding:2px;
+	background: rgb(169,3,41); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgb(169,3,41) 0%, rgb(214,4,7) 22%, rgb(143,2,34) 67%, rgb(109,0,25) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgb(169,3,41) 0%,rgb(214,4,7) 22%,rgb(143,2,34) 67%,rgb(109,0,25) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgb(169,3,41) 0%,rgb(214,4,7) 22%,rgb(143,2,34) 67%,rgb(109,0,25) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+
+}
+.statusBarPH{
+	width:33%;
+	float:left;
+}
+/*navigation layout*/
+#actions{
+	background-color:black;
+	color:white;
+	font-size: 3.3em;
+	list-style-type: none;
+}
+
+#actions li{
+	display:block;
+	margin-left:50px;
+	border-bottom-right-radius: 30px;
+
+}
+
+#actions li:hover{
+	background-color:#539F99;
+	color:black;
+	cursor : pointer;
+}
+#socialActions li:hover,#primaryActions li:hover,#financialActions li:hover{
+	background-color:black;
+	color:white;
+}
+
+.tabPH{
+	top:0;
+	width:31%;
+	margin-right:10px;
+	float:left;
+	background-color:black;
+	z-index: 2;
+	border-style:solid;
+	border-color:white;
+	border-bottom-right-radius: 30px;
+	
+}
+
+
+.liHidden{
+	display:none;
+}
+
